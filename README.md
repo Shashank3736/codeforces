@@ -9,3 +9,4 @@ My codeforces solution at one place
 | Solved | March 28, 2024 | [1948B. Array Fix](https://codeforces.com/problemset/problem/1948/B) | 1100
 | Solved | March 28, 2024 | [1946B. Maximum Sum](https://codeforces.com/problemset/problem/1946/B) | 1100
 | Solved | March 29, 2024 | [1948C. Arrow Path](https://codeforces.com/problemset/problem/1948/C) | 1300
+| Solved | March 29, 2024 | [1945D. Seraphim the Owl](https://codeforces.com/problemset/problem/1945/D) | 1300
