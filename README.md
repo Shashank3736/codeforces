@@ -11,3 +11,4 @@ My codeforces solution at one place
 | Solved | March 29, 2024 | [1948C. Arrow Path](https://codeforces.com/problemset/problem/1948/C) | 1300
 | Solved | March 29, 2024 | [1945D. Seraphim the Owl](https://codeforces.com/problemset/problem/1945/D) | 1300
 | Solved | March 31, 2024 | [1945C. Left and Right Houses](https://codeforces.com/problemset/problem/1945/C) | 1200
+| Solved | April 2, 2024 | [1946C. Tree Cutting](https://codeforces.com/problemset/problem/1946/C) | 1600
