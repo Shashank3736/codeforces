@@ -12,3 +12,4 @@ My codeforces solution at one place
 | Solved | March 29, 2024 | [1945D. Seraphim the Owl](https://codeforces.com/problemset/problem/1945/D) | 1300
 | Solved | March 31, 2024 | [1945C. Left and Right Houses](https://codeforces.com/problemset/problem/1945/C) | 1200
 | Solved | April 2, 2024 | [1946C. Tree Cutting](https://codeforces.com/problemset/problem/1946/C) | 1600
+| Solved | April 3, 2024 | [1943A. MEG Game I](https://codeforces.com/problemset/problem/1943/A) | 1300
