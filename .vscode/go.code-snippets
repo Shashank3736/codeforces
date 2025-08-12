@@ -1,0 +1,31 @@
+{
+    "go.snippets": {
+        "Project Filler": {
+            "prefix": "projectfiller",
+            "scope": "go",
+            "body": [
+                "package main",
+                "",
+                "import (",
+                "\t\"bufio\"",
+                "\t\"os\"",
+                "\t\"strconv\"",
+                "\t\"strings\"",
+                ")",
+                "",
+                "func main() {",
+                "\treader := bufio.NewReader(os.Stdin)",
+                "\ttemp, _ := reader.ReadString('\\n')",
+                "\ttemp = strings.TrimSpace(temp)",
+                "\tt, _ := strconv.Atoi(temp)",
+                "",
+                "\t//loop over t",
+                "\t",
+                "\tfor ; t > 0; t-- {",
+                "\t\t// get each testcase specific data;",
+                "\t}",
+                "}"
+            ]
+        }
+    }
+}
