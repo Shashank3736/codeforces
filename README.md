@@ -1,5 +1,33 @@
-My codeforces solution at one place
-----------------
+# My Codeforces Solutions
+
+This repository contains my solutions to Codeforces problems, organized by contest.
+
+## Repository Structure
+
+```
+/
+├── README.md
+├── contests/
+│   ├── [CONTEST_ID]/
+│   │   ├── [PROBLEM_LETTER]/
+│   │   │   └── [CONTEST_ID][PROBLEM_LETTER]/
+│   │   │       └── [CONTEST_ID][PROBLEM_LETTER].go
+│   │   └── ...
+│   └── ...
+├── fix_structure.py
+└── .vscode/
+    └── go.code-snippets
+```
+
+- `contests/`: Contains all the solutions, organized by contest ID.
+
+## How to Use
+
+1.  Navigate to the `contests` directory.
+2.  Find the contest you are interested in.
+3.  Open the problem's folder to find the solution.
+
+## Problem List
 
 | Status | Date | Question | Rating |
 | -- | --- | ------- | ----- |
@@ -13,3 +41,4 @@ My codeforces solution at one place
 | Solved | March 31, 2024 | [1945C. Left and Right Houses](https://codeforces.com/problemset/problem/1945/C) | 1200
 | Solved | April 2, 2024 | [1946C. Tree Cutting](https://codeforces.com/problemset/problem/1946/C) | 1600
 | Solved | April 3, 2024 | [1943A. MEG Game I](https://codeforces.com/problemset/problem/1943/A) | 1300
+| Solved | April 4, 2024 | [2130B. Pathless](https://codeforces.com/problemset/problem/2130/B) | 1100
