@@ -8,38 +8,30 @@ def fix_contest_structure():
         print(f"Error: '{contests_dir}' directory not found.")
         return
 
-    for item in os.listdir(contests_dir):
-        item_path = os.path.join(contests_dir, item)
-        if not os.path.isdir(item_path):
+    for contest_id in os.listdir(contests_dir):
+        contest_path = os.path.join(contests_dir, contest_id)
+        if not os.path.isdir(contest_path):
             continue
 
-        # The folder name is currently like '1945D', we need to separate '1945' and 'D'
-        match = re.match(r'^(\d+)([A-Z])$', item)
-        if match:
-            contest_id = match.group(1)
-            problem_letter = match.group(2)
-            
-            print(f"Processing: {item}")
+        for tag in os.listdir(contest_path):
+            tag_path = os.path.join(contest_path, tag)
+            if not os.path.isdir(tag_path):
+                continue
 
-            # Create the new contest directory if it doesn't exist
-            new_contest_dir = os.path.join(contests_dir, contest_id)
-            if not os.path.exists(new_contest_dir):
-                os.makedirs(new_contest_dir)
-                print(f"  Created directory: {new_contest_dir}")
+            for problem_folder in os.listdir(tag_path):
+                problem_folder_path = os.path.join(tag_path, problem_folder)
+                if not os.path.isdir(problem_folder_path):
+                    continue
 
-            # Create the problem directory
-            problem_dir = os.path.join(new_contest_dir, problem_letter)
-            if not os.path.exists(problem_dir):
-                os.makedirs(problem_dir)
-                print(f"  Created directory: {problem_dir}")
+                go_file_name = f"{problem_folder}.go"
+                go_file_path = os.path.join(problem_folder_path, go_file_name)
 
-            # Move the entire old folder to the new problem directory
-            # The old folder contains the .go file
-            destination_path = os.path.join(problem_dir, item)
-            shutil.move(item_path, destination_path)
-            print(f"  Moved '{item}' to '{problem_dir}/'")
-        else:
-            print(f"Skipping item with unexpected name format: {item}")
+                if os.path.exists(go_file_path):
+                    destination_path = os.path.join(tag_path, go_file_name)
+                    print(f"Moving '{go_file_path}' to '{destination_path}'")
+                    shutil.move(go_file_path, destination_path)
+                    print(f"Removing redundant directory '{problem_folder_path}'")
+                    shutil.rmtree(problem_folder_path)
 
     print("\nRestructuring complete.")
 
